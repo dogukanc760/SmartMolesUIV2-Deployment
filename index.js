@@ -33,6 +33,6 @@ app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, './build', 'index.html'));
 });
 
-app.listen(process.env.PORT || 3000, () => {
-  console.log("server running at " + 3000);
+app.listen(process.env.PORT, () => {
+  console.log("server running at " + process.env.PORT);
 });
